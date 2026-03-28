@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <ImageView
+        android:id="@+id/samolet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="выход"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/samolet" />
+    <TextView
+        android:id="@+id/profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/vyhod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="выход"
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="64dp"/>
+
+    <ImageView
+        android:id="@+id/photourl"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profil"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/textedit_background" />
+
+    <EditText
+        android:id="@+id/FIO"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textedit_background"
+        android:hint="ФИО"
+        android:padding="6dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photourl"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textedit_background"
+        android:hint="Телефон"
+        android:padding="6dp"
+        android:textSize="12sp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FIO"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textedit_background"
+        android:hint="Email"
+        android:padding="6dp"
+        android:textSize="12sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/urlforphoto"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textedit_background"
+        android:hint="URL фото"
+        android:padding="6dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlforphoto"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="изменить профиль"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:background="@drawable/textedit_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addphoto"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="добавить фото"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:background="@drawable/textedit_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adress"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="адреса доставки"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:background="@drawable/textedit_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addphoto"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/zakazy"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="заказы"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:background="@drawable/textedit_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adress"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/del"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="удалить профиль"
+        android:textColor="@color/red"
+        android:textSize="11sp"
+        android:background="@drawable/textedit_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zakazy"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/textedit_background"
+        app:itemIconSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

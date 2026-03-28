@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:backgroundTint="#FDFDFD"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        app:srcCompat="@drawable/strelochka" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Зарегистрируйтесь!"
+        android:textStyle="bold"
+        android:textColor="@color/main"
+        android:textSize="22dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Введите ФИО:"
+        android:textStyle="bold"
+
+        android:textColor="@color/main"
+        android:textSize="16dp"/>
+
+
+    <EditText
+        android:id="@+id/FIO"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textedit_background"
+        android:ems="10"
+        android:inputType="text"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Введите номер телефона:"
+        android:textStyle="bold"
+
+        android:textColor="@color/main"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textedit_background"
+        android:inputType="phone" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Введите почту:"
+        android:textStyle="bold"
+
+        android:textColor="@color/main"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textedit_background"
+        android:inputType="textEmailAddress" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Введите пароль:"
+        android:textStyle="bold"
+
+        android:textColor="@color/main"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textedit_background"
+        android:inputType="textPassword" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Повторите пароль:"
+        android:textStyle="bold"
+
+        android:textColor="@color/main"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textedit_background"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:textColor="@color/main"
+        android:text="Вы соглашаетесь с обработкой персональных данных" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Зарегистрироваться"
+        android:backgroundTint="@color/red"/>
+
+    <TextView
+        android:id="@+id/toregistration"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/main"
+        android:text="Есть аккаунт? Войти!" />
+
+</LinearLayout>
